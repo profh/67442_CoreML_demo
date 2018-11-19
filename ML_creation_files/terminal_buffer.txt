@@ -1,0 +1,65 @@
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> virtualenv coreml
+Using base prefix '/Library/Frameworks/Python.framework/Versions/3.6'
+New python executable in /Users/profh/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials/coreml/bin/python3.6
+Also creating executable in /Users/profh/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials/coreml/bin/python
+Installing setuptools, pip, wheel... done.
+
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> source coreml/bin/activate
+
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> pip install -U coremltools
+Collecting coremltools
+  Downloading https://files.pythonhosted.org/packages/93/26/39fbb0c409ad20e09876d091c46250cc249a2734d997a5dd09d2ee417385/coremltools-2.0-cp36-none-macosx_10_14_intel.whl (3.1MB)
+    100% |████████████████████████████████| 3.1MB 8.5MB/s
+Collecting numpy>=1.10.0 (from coremltools)
+  Downloading https://files.pythonhosted.org/packages/74/68/2b00ba3c7390354db2a1706291750b6b7e911f6f79c0bd2184ae04f3c6fd/numpy-1.15.4-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (24.5MB)
+    100% |████████████████████████████████| 24.5MB 1.7MB/s
+Collecting protobuf>=3.1.0 (from coremltools)
+  Downloading https://files.pythonhosted.org/packages/c7/27/133f225035b9539f2dcfebcdf9a69ff0152f56e0120160ec5c972ea7deb9/protobuf-3.6.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (1.2MB)
+    100% |████████████████████████████████| 1.2MB 12.5MB/s
+Collecting six==1.10.0 (from coremltools)
+  Downloading https://files.pythonhosted.org/packages/c8/0a/b6723e1bc4c516cb687841499455a8505b44607ab535be01091c0f24f079/six-1.10.0-py2.py3-none-any.whl
+Requirement already satisfied, skipping upgrade: setuptools in ./coreml/lib/python3.6/site-packages (from protobuf>=3.1.0->coremltools) (40.6.2)
+Installing collected packages: numpy, six, protobuf, coremltools
+Successfully installed coremltools-2.0 numpy-1.15.4 protobuf-3.6.1 six-1.10.0
+
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> pip install -U pandas
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/78/78/50ef81a903eccc4e90e278a143c9a0530f05199f6221d2e1b21025852982/pandas-0.23.4-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (14.6MB)
+    100% |████████████████████████████████| 14.7MB 2.2MB/s
+Collecting pytz>=2011k (from pandas)
+  Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)
+    100% |████████████████████████████████| 512kB 3.4MB/s
+Requirement already satisfied, skipping upgrade: numpy>=1.9.0 in ./coreml/lib/python3.6/site-packages (from pandas) (1.15.4)
+Collecting python-dateutil>=2.5.0 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/74/68/d87d9b36af36f44254a8d512cbfc48369103a3b9e474be9bdfe536abfc45/python_dateutil-2.7.5-py2.py3-none-any.whl (225kB)
+    100% |████████████████████████████████| 235kB 2.6MB/s
+Requirement already satisfied, skipping upgrade: six>=1.5 in ./coreml/lib/python3.6/site-packages (from python-dateutil>=2.5.0->pandas) (1.10.0)
+Installing collected packages: pytz, python-dateutil, pandas
+Successfully installed pandas-0.23.4 python-dateutil-2.7.5 pytz-2018.7
+
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> pip install -U sklearn
+Collecting sklearn
+  Downloading https://files.pythonhosted.org/packages/1e/7a/dbb3be0ce9bd5c8b7e3d87328e79063f8b263b2b1bfa4774cb1147bfcd3f/sklearn-0.0.tar.gz
+Collecting scikit-learn (from sklearn)
+  Downloading https://files.pythonhosted.org/packages/72/c8/7a449014b506d4fed3d7fef5b86c0210ff882a13da82626a12ce9f7db616/scikit_learn-0.20.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (7.8MB)
+    100% |████████████████████████████████| 7.8MB 3.8MB/s
+Collecting scipy>=0.13.3 (from scikit-learn->sklearn)
+  Downloading https://files.pythonhosted.org/packages/a0/b6/70bf61c1badb5fea82d4c558e05e76c2dee5e77bb072fe465d7c7a87287d/scipy-1.1.0-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (16.7MB)
+    100% |████████████████████████████████| 16.7MB 2.2MB/s
+Requirement already satisfied, skipping upgrade: numpy>=1.8.2 in ./coreml/lib/python3.6/site-packages (from scikit-learn->sklearn) (1.15.4)
+Building wheels for collected packages: sklearn
+  Running setup.py bdist_wheel for sklearn ... done
+  Stored in directory: /Users/profh/Library/Caches/pip/wheels/76/03/bb/589d421d27431bcd2c6da284d5f2286c8e3b2ea3cf1594c074
+Successfully built sklearn
+Installing collected packages: scipy, scikit-learn, sklearn
+Successfully installed scikit-learn-0.20.0 scipy-1.1.0 sklearn-0.0
+
+mogh.local ~/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials
+> p3 create_model.py
+/Users/profh/67-442-F18/CoreML materials/iPhone Resale Project/ML model materials/coreml/lib/python3.6/site-packages/sklearn/linear_model/base.py:485: RuntimeWarning: internal gelsd driver lwork query error, required iwork dimension not returned. This is likely the result of LAPACK bug 0038, fixed in LAPACK 3.2.2 (released July 21, 2010). Falling back to 'gelss' driver.
+  linalg.lstsq(X, y)
